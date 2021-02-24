@@ -113,11 +113,11 @@ index_img: https://cdn.jsdelivr.net/gh/thomitics/picbed/pics/b2bg.jpg
 default_top_img: https://cdn.jsdelivr.net/gh/thomitics/picbed/pics/bg565.jpg
 
 # The banner image of archive page
-archive_img: https://api.r10086.com/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F2.php  
+archive_img: https://api.r10086.com/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F2.php
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://api.r10086.com/%E9%A3%8E%E6%99%AF%E7%B3%BB%E5%88%977.php 
+tag_img: https://api.r10086.com/%E9%A3%8E%E6%99%AF%E7%B3%BB%E5%88%977.php
 
 # The banner image of tag page
 # format:
@@ -148,8 +148,8 @@ cover:
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io/img/friend_404.gif
-  post_page: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io/img/404.jpg
+  flink: https://cdn.jsdelivr.net/gh/thomitics/blog/img/friend_404.gif
+  post_page: https://cdn.jsdelivr.net/gh/thomitics/blog/img/404.jpg
 
 # A simple 404 page
 error_404:
@@ -217,7 +217,7 @@ reward:
 # Easily browse and edit blog source code online.
 post_edit:
   enable: true
-  url: https://github.com/thomitics/likiblaze.github.io/edit/master/source/
+  url: https://github.com/thomitics/HexoG/edit/master/source/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
 
 # Related Articles
@@ -419,7 +419,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: 本网站由<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io/images/又拍云_logo6.png"></a><a href="https://vercel.com"><svg width="283" height="64" viewBox="0 0 283 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M141.04 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM248.72 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM200.24 34c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9V5h9zM36.95 0L73.9 64H0L36.95 0zm92.38 5l-27.71 48L73.91 5H84.3l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10V51h-9V17h9v9.2c0-5.08 5.91-9.2 13.2-9.2z" fill="#000"/></svg></a>提供CDN/云储存服务
+  custom_text: 本网站由<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io/images/又拍云_logo6.png"></a>提供CDN/云储存服务
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -845,7 +845,7 @@ pangu:
 # https://github.com/verlok/lazyload
 lazyload:
   enable: true
-  post: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/img/loading.gif
+  post: https://cdn.jsdelivr.net/gh/thomitics/blog@master/img/loading.gif
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -890,10 +890,10 @@ inject:
 # 非必要請不要修改
 CDN:
   # main
-  main_css: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/index.css
+  main_css: https://cdn.jsdelivr.net/gh/thomitics/blog@master/css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/js/main.js
-  utils: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/js/utils.js
+  main: https://cdn.jsdelivr.net/gh/thomitics/blog@master/js/main.js
+  utils: https://cdn.jsdelivr.net/gh/thomitics/blog@master/js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -914,8 +914,8 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/js/search/algolia.js
+  local_search: https://cdn.jsdelivr.net/gh/thomitics/blog@master/js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/gh/thomitics/blog@master/js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
@@ -927,7 +927,7 @@ CDN:
   mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 
   # count
-  busuanzi: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/js/busuanzi.pure.mini.js
+  busuanzi: https://cdn.jsdelivr.net/gh/thomitics/blog@master/js/busuanzi.pure.mini.js
 
   # background effect
   canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
@@ -958,7 +958,7 @@ CDN:
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/gh/thomitics/blog@master/js/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
