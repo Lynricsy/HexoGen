@@ -71,7 +71,7 @@ theme: butterfly
 deploy:
 - type: git
   repo:
-    gitHub: https://Thomitics:c3efffc18ed552ec95d6e9d9be3046596f92f240@github.com/Thomitics/Blog.git
+    gitHub: https://Thomitics:cxx87878787@github.com/Thomitics/Blog.git
     gitee: https://likiblaze:1307a15e608482f6955c4891ebea15e2@gitee.com/likiblaze/LikiBlaze.git
     coding: https://ipxivdYRpA:65e631347af665ea085314fb25a218f30d2bac88@e.coding.net/foxex/page/Page-main.git
   branch: master #2020年10月后github新建仓库默认分支改为main，注意更改
