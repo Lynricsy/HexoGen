@@ -275,7 +275,8 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/
+  
   use:
    - Twikoo
    - Valine
@@ -369,7 +370,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: twikoo-5gnpelbm2388569d
+  envId: twikoo-9gkusr5330416ede
   region:
   option:
 
