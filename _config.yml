@@ -62,8 +62,11 @@ time_format: 'HH:mm:ss'
 updated_option: mtime
 per_page: 10
 pagination_dir: page
-sitemap: null
+# 自动生成sitemap
+sitemap:
 path: /sitemap.xml
+baidusitemap:
+path: /baidusitemap.xml
 include: null
 exclude: null
 ignore: null
