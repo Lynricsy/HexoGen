@@ -63,9 +63,11 @@ updated_option: mtime
 per_page: 10
 pagination_dir: page
 sitemap:
-path: sitemap.xml
-baidusitemap:
-path: baidusitemap.xml
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+  tags: true
+  categories: true
 include: null
 exclude: null
 ignore: null
