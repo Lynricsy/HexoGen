@@ -68,6 +68,8 @@ sitemap:
   rel: false
   tags: true
   categories: true
+baidusitemap:
+path: baidusitemap.xml
 include: null
 exclude: null
 ignore: null
