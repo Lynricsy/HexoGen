@@ -339,6 +339,7 @@ valine:
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick # required fields (nick/mail)
   option:
+  visitor: true
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
@@ -373,6 +374,7 @@ twikoo:
   envId: twikoo-9gkusr5330416ede
   region:
   option:
+  visitor: true
 
 # Chat Services
 # --------------------------------------
@@ -710,11 +712,11 @@ runtimeshow:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
+  enable: true
   limit: 4
   avatar: true
   # You can only choose one, or neither
-  valine: true
+  valine: false
   github_issues:
     enable: false
     repo:
@@ -722,7 +724,7 @@ newest_comments:
     enable: false
     forum:
     api_key:
-  twikoo: false
+  twikoo: true
   waline: false
 
 # Bottom right button (右下角按鈕)
@@ -798,12 +800,7 @@ note:
 # other
 # --------------------------------------
 
-# Artitalk
-# see https://artitalk.js.org/
-artitalk:
-  appId:
-  appKey:
-  option:
+
 
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
@@ -923,8 +920,8 @@ CDN:
   # math
   mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
-  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
+  katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+  katex_copytex_css: katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
   mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 
   # count
@@ -975,4 +972,4 @@ CDN:
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
 
-  artitalk: https://cdn.jsdelivr.net/npm/artitalk
+ 
