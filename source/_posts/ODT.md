@@ -5,7 +5,7 @@ tags:
  - 数据结构
 categories: 数据结构
 description: 关于一种暴力数据结构——珂朵莉树！
-cover: https://www.z4a.net/images/2021/04/29/43c1b40837a8d0f9245554bac363fe1a7a21a74b.png
+cover: https://cdn.jsdelivr.net/gh/Thomitics/PicBed@master/pics/v2-dab9afe9114971ed82c27e5516af35b8_720w.jpg
 ---
 <h2> 引：CF896C </h2>
 <a href="https://codeforces.com/problemset/problem/896/C"> 原题在这里</a>
@@ -121,11 +121,11 @@ auto split(int pos)
 ```
 用图片演示一下：
 比如`split(4)`:
-<img src="https://www.z4a.net/images/2021/04/29/v2-e2bfb654e0549283734097606845b695_r.png">
+<img src="https://cdn.jsdelivr.net/gh/Thomitics/PicBed@master/pics/20210501072841.png">
 
 首先`lower_bound`，找到左端点大于等于$4$的节点，`<5,6,3>`。它的左端点不是4，所以回退，得`<2,4,2>`。我们把节点`<2,4,2>`删除，然后插入`<2,3,2>`及`<4,4,2>`即可。是不是很简单？
 
-<img src="https://www.z4a.net/images/2021/04/29/v2-f8d3b687974d1a054e0812acd58d5626_r.png">
+<img src="https://cdn.jsdelivr.net/gh/Thomitics/PicBed@master/pics/20210501072920.png">
 
 ### 区间赋值：
 珂朵莉树的精髓在于区间赋值。而区间赋值操作的写法也极其简单：
