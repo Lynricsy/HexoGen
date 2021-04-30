@@ -12,7 +12,7 @@ jobs:
         with:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-      - uses: thomitics/github-actions-hexo@v1.5
+      - uses: thomitics/github-actions-hexo@v1.6
         with:
           deploykey: ${{secrets.DEPLOY_KEY}}
           username: Thomitics
