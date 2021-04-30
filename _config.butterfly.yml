@@ -149,7 +149,7 @@ cover:
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: https://cdn.jsdelivr.net/gh/thomitics/blog/img/friend_404.gif
-  post_page: https://cdn.jsdelivr.net/gh/thomitics/blog/img/404.jpg
+  post_page: https://cdn.jsdelivr.net/gh/Thomitics/PicBed@master/pics/40404.jpg
 
 # A simple 404 page
 error_404:
@@ -843,7 +843,7 @@ pangu:
 # https://github.com/verlok/lazyload
 lazyload:
   enable: true
-  post: https://cdn.jsdelivr.net/gh/thomitics/blog@master/img/loading.gif
+  post: https://cdn.jsdelivr.net/gh/Thomitics/PicBed@master/pics/cqtcqurqqx.gif
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
