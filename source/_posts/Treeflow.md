@@ -5,7 +5,7 @@ tags:
  - 数据结构
 categories: 数据结构
 description: 关于一种简单的数据结构——树状数组。
-cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkcmckquj31kw0w0e5l.jpg
+cover: https://tvax2.sinaimg.cn/large/0072Vf1pgy1foxkg2posaj31hc0u0x01.jpg
 ---
 
 <h1>前言</h1>
