@@ -107,7 +107,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/thomitics/picbed/pics/b2bg.jpg
+index_img: https://cdn.jsdelivr.net/gh/Thomitics/PicBed@master/pics/win11.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://cdn.jsdelivr.net/gh/thomitics/picbed/pics/bg565.jpg
