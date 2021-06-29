@@ -881,6 +881,8 @@ inject:
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/plugins.min.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.css">
     - <script src="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/ban.js"></script>
+    - <body οncοpy="alert('对不起，本网页禁止复制！');return false;">
+    - <noscript><iframe src="*.htm"></iframe></noscript>
   bottom:
     # - <script src="xxxx"></script>
     - <script src="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/new.js"></script>
