@@ -880,6 +880,7 @@ inject:
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/iconfont.min.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/plugins.min.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.css">
+    - <script src="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/ban.js"></script>
   bottom:
     # - <script src="xxxx"></script>
     - <script src="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/new.js"></script>
