@@ -10,14 +10,12 @@ cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkibab1zj31hc0u0dy7.jpg
 ---
 
 
-$$
-\begin{matrix}
-\color{gold}\colorbox{black}{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\kern{0.4pt}} \\
+
+$\begin{matrix}\color{gold}\colorbox{black{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\kern{0.4pt}} \\
 \large \colorbox{black}{\color{gold}\underline{\texttt{Caution!!! \qquad Caution!!! \qquad Caution!!! \qquad Caution!!! }}}\\
 \Large \colorbox{black}{\color{gold}\underline\text{\Huge ☢\:\Large本文使用了少量\LaTeX，可能会导致加载极快!\Huge \:☢\Large\ \ \!\! \color{black}\kern{8.4pt}}} \\
 \large \colorbox{black}{\color{gold}\underline{\texttt{Caution!!! \qquad Caution!!! \qquad Caution!!! \qquad Caution!!! }}}\\
-\end{matrix}
-$$
+\end{matrix}$
 
 <p><strong>Update:</strong></p>
 ```
@@ -31,24 +29,33 @@ $$
 2021.6.28
 新增 std::string
 新增 Tarjan
+ 
 2021.6.15
 新增 Treap 和 左偏树<br>
+ 
 2021.6.14
 新增 Kruskal 最小生成树 <br>
+ 
 2021.5.30
 单源最短路径新增 vector 存图的 <br>
+ 
 2021.5.16
 动态规划新增 LCIS （最长公共上升子序列）<br>
+ 
 2021.5.14
 更新了区间dp的模板<br>
+ 
 2021.4.29
 新增了珂朵莉树
 快速幂的代码锅了，现已修复
 格式化了全部代码！！！<br>
+ 
 2021.4.28
 添加了单调队列，包含 “定长” 和 “不定长”。<br>
+ 
 2021.4.23
 求 gcd 的部分锅了，重新写了下。<br>
+ 
 2021.4.20
 新增线段树的区间加乘，区间修改。
 重构了线段树的代码。
@@ -1717,7 +1724,7 @@ void SPFA(int s)
 
 <h4 id="最长路">最长路</h4>
 <p>可依据最短路代码进行修改。</p>
-<pre><code>1. `dis` 数组赋初值时，如果没有负边权就赋 $-1$ ，如果有负边权就赋无限小。
+1. `dis` 数组赋初值时，如果没有负边权就赋 $-1$ ，如果有负边权就赋无限小。
 ```
 
 <ol start="2">
