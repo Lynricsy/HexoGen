@@ -2,7 +2,7 @@
 title: OI模板
 date: 2021-06-29
 tags:
- - 大杂烩
+ - 
 categories: 大杂烩
 description: 一些OI模板总结。
 top_img: https://api.dujin.org/bing/1920.php
@@ -10,9 +10,11 @@ cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkibab1zj31hc0u0dy7.jpg
 ---
 
 <p><strong>Update:</strong></p>
-<pre><code>2021.6.29    
+```
+2021.6.29    
 新增 KMP 和 LCA
-</code></pre>
+```
+
 <details>
 <summary>历史更新记录</summary>
 <pre><code>
@@ -41,11 +43,13 @@ cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkibab1zj31hc0u0dy7.jpg
 新增线段树的区间加乘，区间修改。
 重构了线段树的代码。
 更新了部分标题名称。
-</code></pre>
+```
+
 </details>
 <h2 id="考试必备">考试必备</h2>
 <h3 id="快速读入">快速读入</h3>
-<pre><code class="language-cpp">inline ll read()
+```cpp
+inline ll read()
 {
     int x = 0, f = 0;
     char ch = getchar();
@@ -55,33 +59,45 @@ cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkibab1zj31hc0u0dy7.jpg
         x = (x &lt;&lt; 1) + (x &lt;&lt; 3) + (ch ^ 48), ch = getchar();
     return f ? -x : x;
 }
-</code></pre>
+```
+
 <h3 id="对拍"><a href="https://www.cnblogs.com/EdisonBa/p/13509379.html" target="_blank">对拍</a></h3>
 <h3 id="卡常小技巧">卡常小技巧</h3>
 <p><strong>① 位运算乘除</strong></p>
 <p></p><div class="math display">\[x=x\times2^n ~可以转化成~ x&lt;&lt;n
 \]</div><p></p><p></p><div class="math display">\[x=x÷2^n ~可以转化成~ x&gt;&gt;n
 \]</div><p></p><p><strong>② for 卡常</strong></p>
-<pre><code class="language-cpp">for (register int i(1); i &lt;= n; ++i)
-</code></pre>
+```cpp
+for (register int i(1); i &lt;= n; ++i)
+```
+
 <p><strong>③ 短函数前加</strong> <code>inline</code> <strong>卡常</strong></p>
 <p><strong>④ 判断奇偶</strong></p>
-<pre><code class="language-cpp">if(a % 2 == 0)  可以转化成  if((a &amp; 1) == 0)
-</code></pre>
+```cpp
+if(a % 2 == 0)  可以转化成  if((a &amp; 1) == 0)
+```
+
 <p><strong>⑤ 取模用</strong> <code>&amp;</code></p>
-<pre><code class="language-cpp">x = 667 % 4;    可以转化成  x = 667 &amp; (4-1);
+```cpp
+x = 667 % 4;    可以转化成  x = 667 &amp; (4-1);
 x = 667 % 32;   可以转化成  x = 667 &amp; (32-1);
-</code></pre>
+```
+
 <p><strong>⑥ 正负转换用位运算</strong></p>
-<pre><code class="language-cpp">i = -1;       可以转换成  i = ~i + 1;   或   i = (i ^ -1) + 1; 
-</code></pre>
+```cpp
+i = -1;       可以转换成  i = ~i + 1;   或   i = (i ^ -1) + 1; 
+```
+
 <p><strong>⑦ 取绝对值</strong></p>
-<pre><code class="language-cpp">k = abs(x);   可以转换成  k = (x ^ (x &gt;&gt; 31))-(x &gt;&gt; 31);  
-</code></pre>
+```cpp
+k = abs(x);   可以转换成  k = (x ^ (x &gt;&gt; 31))-(x &gt;&gt; 31);  
+```
+
 <h2 id="数据结构">数据结构</h2>
 <h3 id="st表">ST表</h3>
 <p>静态查询区间最值。</p>
-<pre><code class="language-cpp">ll f[100001][20];
+```cpp
+ll f[100001][20];
 ll n, m, a[100001];
 
 void ST_make()
@@ -114,11 +130,13 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="单调队列">单调队列</h3>
 <p><a href="https://www.luogu.com.cn/problem/P1886" target="_blank">例题1</a></p>
 <p>有一个长为 <span class="math inline">\(n\)</span> 的序列 <span class="math inline">\(a\)</span>，以及一个大小为 <span class="math inline">\(k\)</span> 的窗口。现在这个从左边开始向右滑动，每次滑动一个单位，求出每次滑动后窗口中的最大值和最小值。</p>
-<pre><code class="language-cpp">ll n, k, cnt = 0;
+```cpp
+ll n, k, cnt = 0;
 ll ans[2][1000005];
 
 struct node
@@ -161,11 +179,13 @@ int main()
     for (int i = 1; i &lt;= n - k + 1; ++i)
         printf("%lld ", ans[1][i]);
 }
-</code></pre>
+```
+
 <p><a href="https://www.luogu.com.cn/problem/P1714" target="_blank">例题2</a></p>
 <p>最大不定长子段和问题。</p>
 <p>在一段长为 <span class="math inline">\(n\)</span> 的数列中，找出一个长度 <span class="math inline">\(≤m\)</span> 的子段，使得它的和是最大的。子段长度不能为0。</p>
-<pre><code class="language-cpp">const ll maxn = 5000005;
+```cpp
+const ll maxn = 5000005;
 #define INF 9223372036854775800
 
 ll sum[maxn], q[maxn];
@@ -195,10 +215,12 @@ int main()
     printf("%lld\n", ans);
     Edison Ba;
 }
-</code></pre>
+```
+
 <h3 id="树状数组">树状数组</h3>
 <p>支持单点修改，区间查询。</p>
-<pre><code class="language-cpp">ll lowbit(ll x)
+```cpp
+ll lowbit(ll x)
 {
     return x &amp; (-x);
 }
@@ -252,12 +274,14 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="线段树">线段树</h3>
 <p>注：本线段树使用链表形式（指针），每个结点都是左闭右开区间。</p>
 <h4 id="单点加">单点加</h4>
 <p>作用等同于树状数组，但是线段树时间和空间的开销都非常大。</p>
-<pre><code class="language-cpp">ll n, m;
+```cpp
+ll n, m;
 
 struct node
 { //树结点
@@ -346,13 +370,15 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h4 id="区间加">区间加</h4>
 <p>需要延迟修改。</p>
 <p>对于结点，新加 <span class="math inline">\(k\)</span>，代表延迟修改量。</p>
 <p>新增延迟信息下传函数 <code>update()</code></p>
 <p>对于修改和查询函数新增延迟操作。</p>
-<pre><code class="language-cpp">ll n, m;
+```cpp
+ll n, m;
 
 struct node
 {                    //树结点
@@ -438,11 +464,13 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h4 id="区间加乘">区间加乘</h4>
 <p>操作为加或乘，最后答案模 <span class="math inline">\(mod\)</span>。</p>
 <p>打两个标记，分别为 <code>add</code> 和 <code>mul</code> 。</p>
-<pre><code class="language-cpp">ll n, m, mod;
+```cpp
+ll n, m, mod;
 
 struct node
 {                           //树结点
@@ -535,7 +563,8 @@ void mul(node *now, ll l, ll r, ll k) //区间乘
         now-&gt;sum = (now-&gt;lc-&gt;sum + now-&gt;rc-&gt;sum) % mod;
     }
 }
-</code></pre>
+```
+
 <h3 id="平衡树">平衡树</h3>
 <h4 id="treap">Treap</h4>
 <p>您需要写一种数据结构，来维护一些数，其中需要提供以下操作：</p>
@@ -549,7 +578,8 @@ void mul(node *now, ll l, ll r, ll k) //区间乘
 </ol>
 <p>第一行为 <span class="math inline">\(n\)</span>，表示操作的个数,下面 <span class="math inline">\(n\)</span> 行每行有两个数 <span class="math inline">\(\text{opt}\)</span> 和 <span class="math inline">\(x\)</span>，<span class="math inline">\(\text{opt}\)</span> 表示操作的序号<span class="math inline">\(( 1≤opt≤6  )\)</span></p>
 <p>对于操作 <span class="math inline">\(3,4,5,6\)</span> 每行输出一个数，表示对应答案</p>
-<pre><code class="language-cpp">const ll maxn = 1e5 + 10;
+```cpp
+const ll maxn = 1e5 + 10;
 const ll inf = 1e14 + 10;
 ll n, tot, root;
 
@@ -785,7 +815,8 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="左偏树">左偏树</h3>
 <p>一开始有 <span class="math inline">\(n\)</span> 个小根堆，每个堆包含且仅包含一个数。接下来需要支持两种操作：</p>
 <ol>
@@ -796,7 +827,8 @@ int main()
 <p>第二行包含 <span class="math inline">\(n\)</span> 个正整数，其中第 <span class="math inline">\(i\)</span> 个正整数表示第 <span class="math inline">\(i\)</span> 个小根堆初始时包含且仅包含的数。</p>
 <p>接下来 <span class="math inline">\(m\)</span> 行每行 <span class="math inline">\(2\)</span> 个或 <span class="math inline">\(3\)</span> 个正整数，表示一条操作。</p>
 <p>输出包含若干行整数，分别依次对应每一个操作 <span class="math inline">\(2\)</span> 所得的结果。</p>
-<pre><code class="language-cpp">#define M 150010
+```cpp
+#define M 150010
 #define swap my_swap
 #define ls S[x].Son[0]
 #define rs S[x].Son[1]
@@ -851,7 +883,8 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="珂朵莉树"><a href="https://oi-wiki.org/ds/odt/" target="_blank">珂朵莉树</a></h3>
 <p>神奇的暴力数据结构</p>
 <p><a href="https://www.luogu.com.cn/problem/CF896C" target="_blank">例题</a></p>
@@ -865,7 +898,8 @@ int main()
 </ul>
 <p>数据随机，时限 <span class="math inline">\(2s\)</span>。</p>
 <p>关键操作：推平一段区间，使一整段区间内的东西变得一样。保证数据随机</p>
-<pre><code class="language-cpp">#include &lt;set&gt;
+```cpp
+#include &lt;set&gt;
 #include &lt;vector&gt;
 #define p 1000000007
 #define IT set&lt;node&gt;::iterator
@@ -991,12 +1025,14 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h2 id="数学">数学</h2>
 <h3 id="线性筛素数">线性筛素数</h3>
 <p>给定一个整数 <span class="math inline">\(n\)</span> ，求出 $[2,n] $ 之间的所有素数。</p>
 <p>思路：<code>prime</code> 数组存放已经筛出的素数， <span class="math inline">\(m\)</span> 代表素数个数（也就是说遍历时从 <span class="math inline">\(1\)</span> 遍历到 <span class="math inline">\(m\)</span> 即可），<code>v</code> 数组代表有没有被标记，避免重复筛。</p>
-<pre><code class="language-cpp">int v[maxn], prime[maxn], n, k, t, m;
+```cpp
+int v[maxn], prime[maxn], n, k, t, m;
 void primes(int n)
 {
     memset(v, 0, sizeof(v)); //清空标记数组
@@ -1020,10 +1056,12 @@ int main()
     for (int i = 1; i &lt;= m; ++i)
         printf("%d\n", prime[i]);
 }
-</code></pre>
+```
+
 <h3 id="最大公约数">最大公约数</h3>
 <p><strong>① 标准</strong></p>
-<pre><code class="language-cpp">inline int gcd(int a, int b)
+```cpp
+inline int gcd(int a, int b)
 {
     int r;
     while (b &gt; 0)
@@ -1034,41 +1072,51 @@ int main()
     }
     return a;
 }
-</code></pre>
+```
+
 <p><strong>② 位运算</strong></p>
-<pre><code class="language-cpp">inline int gcd(int a, int b) //a，b不能为0
+```cpp
+inline int gcd(int a, int b) //a，b不能为0
 {
     while (b ^= a ^= b ^= a %= b)
         ;
     return a;
 }
-</code></pre>
+```
+
 <p><strong>③ 辗转相除法</strong></p>
-<pre><code class="language-cpp">inline int gcd(int a, int b)
+```cpp
+inline int gcd(int a, int b)
 {
     if (b == 0)
         return a;
     else
         return gcd(b, a % b);
 }
-</code></pre>
+```
+
 <p><strong>④ 三目</strong></p>
-<pre><code class="language-cpp">inline int gcd(int a, int b)
+```cpp
+inline int gcd(int a, int b)
 {
     return b &gt; 0 ? gcd(b, a % b) : a;
 }
-</code></pre>
+```
+
 <p><strong>⑤ 外挂（考试禁止）</strong></p>
-<pre><code class="language-cpp">#include &lt;algorithm&gt;
+```cpp
+#include &lt;algorithm&gt;
 inline int gcd(int a, int b)
 {
     return __gcd(a, b); //其实可以在主函数里直接用这个
 }
-</code></pre>
+```
+
 <h2 id="分治">分治</h2>
 <h3 id="快速乘法取余">快速乘法取余</h3>
 <p>给定三个整数 <span class="math inline">\(a,n,mod\)</span> ，求 <span class="math inline">\(a \times n ~\%~mod\)</span> 的值。</p>
-<pre><code class="language-cpp">inline int mult_mod(int a, int n, int mod)
+```cpp
+inline int mult_mod(int a, int n, int mod)
 {
     int ans = 0;
     while (n &gt; 0)
@@ -1080,11 +1128,13 @@ inline int gcd(int a, int b)
     }
     return ans;
 }
-</code></pre>
+```
+
 <p>这个东西好像没有必要的样子，貌似只需要 <span class="math inline">\((a~\%~mod)×(n~\%~mod)~\%~mod\)</span> 即可。</p>
 <h3 id="快速幂">快速幂</h3>
 <p>给定三个整数 <span class="math inline">\(a,n,mod\)</span> ，求 <span class="math inline">\(a^n~\%~mod\)</span> 的值。</p>
-<pre><code class="language-cpp">ll ksm(ll a, ll b, ll mod)
+```cpp
+ll ksm(ll a, ll b, ll mod)
 {
     if (mod == 1)
         return 0;
@@ -1099,11 +1149,13 @@ inline int gcd(int a, int b)
     }
     return ans;
 }
-</code></pre>
+```
+
 <h3 id="lis">LIS</h3>
 <p>求一个序列的最长上升子序列个数。<br>
 本程序采用边读边处理 + 二分法。</p>
-<pre><code class="language-cpp">ll f[maxn], ans = 1; //注意答案个数初始化为1
+```cpp
+ll f[maxn], ans = 1; //注意答案个数初始化为1
 
 int main()
 {
@@ -1133,11 +1185,13 @@ int main()
     return 0;
 }
 
-</code></pre>
+```
+
 <h3 id="lower_bound">lower_bound</h3>
 <p>使用前提：数列为有序数列。</p>
 <h4 id="①数组内">①数组内</h4>
-<pre><code class="language-cpp">//查找范围：[ begin , end ) ，左闭右开区间。
+```cpp
+//查找范围：[ begin , end ) ，左闭右开区间。
 *lower_bound(begin, end, num);        //返回第一个 &gt;= num 的数的数值
 lower_bound(begin, end, num) - begin; // 返回下标
 
@@ -1153,10 +1207,12 @@ int main()
 }
 
 输出结果：4 7
-</code></pre>
+```
+
 <h4 id="②结构体内">②结构体内</h4>
 <p>结构体内使用 lower_bound 需要重载，下面我们主要对结构体中的 <span class="math inline">\(a\)</span> 进行操作。</p>
-<pre><code class="language-cpp">struct node //开结构体
+```cpp
+struct node //开结构体
 {
     int a, id; //定义结构体内的两个变量
     node() {}
@@ -1198,17 +1254,21 @@ int main()
 35
 输出：
 4 40
-</code></pre>
+```
+
 <p>另：upper_bound 的使用与 lower_bound 的使用类似，只不过是严格大于（&gt;）。</p>
 <h2 id="动态规划">动态规划</h2>
 <h3 id="基础模型">基础模型</h3>
 <h4 id="数字金字塔">数字金字塔</h4>
-<pre><code class="language-cpp">f[i][j] = max((f[i][j] + f[i + 1][j]), (f[i][j] + f[i][j + 1]));
-</code></pre>
+```cpp
+f[i][j] = max((f[i][j] + f[i + 1][j]), (f[i][j] + f[i][j + 1]));
+```
+
 <h4 id="lcs">LCS</h4>
 <p>操作对象：两个长度不一定相等的字符串。</p>
 <p><a href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1265" target="_blank">例题</a></p>
-<pre><code class="language-cpp">string s, t;
+```cpp
+string s, t;
 int f[maxn][maxn];
 
 int main()
@@ -1225,11 +1285,13 @@ int main()
     cout &lt;&lt; f[ls][lt] &lt;&lt; endl;
     return 0;
 }
-</code></pre>
+```
+
 <h4 id="lcis">LCIS</h4>
 <p>操作对象：两个长度不一定相等的数列。</p>
 <p><a href="https://www.luogu.com.cn/problem/CF10D" target="_blank">CF10D</a></p>
-<pre><code class="language-cpp">const int maxn = 1005;
+```cpp
+const int maxn = 1005;
 ll n, m, a[maxn], b[maxn], ans;
 ll f[maxn][maxn], lcis[maxn][maxn];
 
@@ -1270,11 +1332,13 @@ int main()
     puts("");
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="基础背包">基础背包</h3>
 <h4 id="01背包">01背包</h4>
 <p>背包数量为 <span class="math inline">\(V\)</span>，有 <span class="math inline">\(n\)</span>件物品，重量为 <span class="math inline">\(w_i\)</span>，价值为 <span class="math inline">\(c_i\)</span>。求能获得最大价值。</p>
-<pre><code class="language-cpp">ll V, n, w[10000], c[10000], f[10000];
+```cpp
+ll V, n, w[10000], c[10000], f[10000];
 
 int main()
 {
@@ -1294,11 +1358,13 @@ int main()
     printf("%lld\n", f[V]);
     return 0;
 }
-</code></pre>
+```
+
 <h4 id="01-方案数">01-方案数</h4>
 <p>一种物品只能选一次，组合出固定价值的方案数问题。</p>
 <p>例题：<a href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1291" target="_blank">ybt1291：数字组合</a></p>
-<pre><code class="language-cpp">ll a[21], f[1003], n, t;
+```cpp
+ll a[21], f[1003], n, t;
 int main()
 {
     n = read();
@@ -1318,21 +1384,25 @@ int main()
     printf("%lld\n", f[t]);
     return 0;
 }
-</code></pre>
+```
+
 <h4 id="完全背包">完全背包</h4>
 <p>一种物品可以选无限次。<br>
 只需要改一下第二层循环的循环顺序就行了。</p>
-<pre><code class="language-cpp">for (int i = 1; i &lt;= n; ++i)
+```cpp
+for (int i = 1; i &lt;= n; ++i)
     for (int v = w[i]; v &lt;= V; ++v)
     {
         if (f[v - w[i]] + c[i] &gt; f[v])
             f[v] = f[v - w[i]] + c[i];
     }
-</code></pre>
+```
+
 <h4 id="完全-方案数">完全-方案数</h4>
 <p>一种物品可以选无限次，组合出固定价值的方案数问题。<br>
 例题：<a href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1293" target="_blank">ybt1293：买书</a></p>
-<pre><code class="language-cpp">ll a[5], f[10002], m;
+```cpp
+ll a[5], f[10002], m;
 
 int main()
 {
@@ -1349,10 +1419,12 @@ int main()
     printf("%lld\n", f[m]);
     return 0;
 }
-</code></pre>
+```
+
 <h4 id="混合背包">混合背包</h4>
 <p>一种物品可以选 <span class="math inline">\(p\)</span> 次。</p>
-<pre><code class="language-cpp">ll w[31], c[31], p[31];
+```cpp
+ll w[31], c[31], p[31];
 ll f[201], n, m;
 
 int main()
@@ -1386,11 +1458,13 @@ int main()
     printf("%lld\n", f[m]);
     return 0;
 }
-</code></pre>
+```
+
 <h4 id="二维费用背包">二维费用背包</h4>
 <p>再加一重循环，多开一维数组即可。</p>
 <p>例题：<a href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1271" target="_blank">ybt1271：【例9.15】潜水员</a></p>
-<pre><code class="language-cpp">ll v, u, k;
+```cpp
+ll v, u, k;
 ll a[1091], b[1021], c[1092];
 ll f[101][101];
 
@@ -1424,12 +1498,14 @@ int main()
     printf("%lld\n", f[v][u]);
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="进阶dp">进阶dp</h3>
 <h4 id="区间dp">区间dp</h4>
 <p>以 <code>f[i][j]</code> 中的 <span class="math inline">\(i\)</span> 为起点，<span class="math inline">\(j\)</span> 为终点进行 dp。</p>
 <p>核心代码：</p>
-<pre><code class="language-cpp">
+```cpp
+
 for (int t = 2; t &lt;= n; ++t)
 {
     for (int i = 1; i &lt;=  n - t + 1; ++i)
@@ -1444,11 +1520,13 @@ for (int t = 2; t &lt;= n; ++t)
 
 print()
 
-</code></pre>
+```
+
 <h4 id="斜率优化dp">斜率优化dp</h4>
 <p>未完成，待补充。</p>
 <p>例题：<a href="https://www.luogu.com.cn/problem/P3195" target="_blank">[HNOI2008]玩具装箱</a></p>
-<pre><code class="language-cpp">ll sum[M], f[M], Q[M];
+```cpp
+ll sum[M], f[M], Q[M];
 ll n, L;
 
 ll X(ll j)
@@ -1490,11 +1568,13 @@ int main()
     }
     printf("%lld\n", f[n]);
 }
-</code></pre>
+```
+
 <h2 id="图论">图论</h2>
 <h3 id="前置">前置</h3>
 <h4 id="链式前向星存图">链式前向星存图</h4>
-<pre><code class="language-cpp">ll head[maxn];
+```cpp
+ll head[maxn];
 
 struct node
 {
@@ -1508,9 +1588,11 @@ void add(const ll u, const ll v, const ll w)
     t[tot].nxt = head[u];
     head[u] = tot;
 }
-</code></pre>
+```
+
 <h4 id="vector-存图">vector 存图</h4>
-<pre><code class="language-cpp">struct node{
+```cpp
+struct node{
     ll to, w;
 };
 
@@ -1520,11 +1602,13 @@ void add(const int u, const int v, const int w)
 {
     t[u].push_back((node){v, w});
 }
-</code></pre>
+```
+
 <h3 id="dijkstra-最短路">Dijkstra 最短路</h3>
 <p>求单源 <span class="math inline">\(s\)</span> 到任意一点的最短路径。最短路径保存在数组 <code>dis</code> 中。</p>
 <h4 id="链式前向星">链式前向星</h4>
-<pre><code class="language-cpp">#include &lt;queue&gt;
+```cpp
+#include &lt;queue&gt;
 priority_queue&lt;pair&lt;ll, ll&gt;&gt; q;
 void dijkstra(int s)
 {
@@ -1557,9 +1641,11 @@ int main()
     ...
 }
 //后面省略
-</code></pre>
+```
+
 <h4 id="vector">vector</h4>
-<pre><code class="language-cpp">void dj(int s)
+```cpp
+void dj(int s)
 {
     memset(dis, 0x3f, sizeof(dis));
     memset(vis, 0, sizeof vis);
@@ -1583,11 +1669,13 @@ int main()
         }
     }
 }
-</code></pre>
+```
+
 <h3 id="spfa">SPFA</h3>
 <p>SPFA能处理负边权，可以判断负环。也可以求最长路。</p>
 <h4 id="最短路">最短路</h4>
-<pre><code class="language-cpp">#include &lt;queue&gt;
+```cpp
+#include &lt;queue&gt;
 queue&lt;int&gt; q;
 void SPFA(int s)
 {
@@ -1615,18 +1703,21 @@ void SPFA(int s)
         }
     }
 }
-</code></pre>
+```
+
 <h4 id="最长路">最长路</h4>
 <p>可依据最短路代码进行修改。</p>
 <pre><code>1. `dis` 数组赋初值时，如果没有负边权就赋 $-1$ ，如果有负边权就赋无限小。
-</code></pre>
+```
+
 <ol start="2">
 <li>把 <code>dis[y]&gt;dis[x]+z</code> 中的 <code>&gt;</code> 改成 <code>&lt;</code> 。</li>
 </ol>
 <h4 id="判断负环">判断负环</h4>
 <p>可在最短路代码基础上进行修改。需新加入一个数组 <code>cnt</code> ，专门记录负环。</p>
 <p>补充代码：</p>
-<pre><code class="language-cpp">ll cnt[maxn]; //专门记录负环
+```cpp
+ll cnt[maxn]; //专门记录负环
 void SPFA().....if (dis[y] &gt; dis[x] + z)
 {
     dis[y] = dis[x] + z;
@@ -1642,9 +1733,11 @@ void SPFA().....if (dis[y] &gt; dis[x] + z)
         vis[y] = 1;
     }
 }
-</code></pre>
+```
+
 <h3 id="floyd-全源最短路">Floyd 全源最短路</h3>
-<pre><code class="language-cpp">inline void floyd()
+```cpp
+inline void floyd()
 {
     for (k = 1; k &lt;= n; k++)
         for (i = 1; i &lt;= n; i++)
@@ -1652,11 +1745,13 @@ void SPFA().....if (dis[y] &gt; dis[x] + z)
                 if (e[i][j] &gt; e[i][k] + e[k][j])
                     e[i][j] = e[i][k] + e[k][j];
 }
-</code></pre>
+```
+
 <h3 id="并查集">并查集</h3>
 <p><span class="math inline">\(n\)</span> 代表元素个数，<span class="math inline">\(m\)</span> 为操作数。</p>
 <p><span class="math inline">\(opt=1\)</span> 时，合并集合 <span class="math inline">\(a,b\)</span> ；<span class="math inline">\(opt=2\)</span> 时，如果 <span class="math inline">\(a,b\)</span> 在同一集合，输出 <code>Y</code> 否则输出 <code>N</code> 。</p>
-<pre><code class="language-cpp">int find(int k)
+```cpp
+int find(int k)
 {
     if (f[k] == k)
         return k;
@@ -1688,11 +1783,13 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="lca">LCA</h3>
 <p><a href="https://www.luogu.com.cn/problem/P3379" target="_blank">P3379 【模板】最近公共祖先（LCA）</a></p>
 <p>邻接表存图。</p>
-<pre><code class="language-cpp">struct node{...};
+```cpp
+struct node{...};
 void add(...){}
 
 ll dep[500010], fa[500010][21], lg[500002];
@@ -1747,11 +1844,13 @@ int main()
     }
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="最小生成树">最小生成树</h3>
 <h4 id="kruskal">Kruskal</h4>
 <p>前置：并查集</p>
-<pre><code class="language-cpp">struct node
+```cpp
+struct node
 {
     ll u, v, w;
 } t[200005];
@@ -1797,9 +1896,11 @@ int main()
     printf("%lld\n", ans);
     Edison Ba;
 }
-</code></pre>
+```
+
 <h4 id="prim">Prim</h4>
-<pre><code class="language-cpp">int ans, cnt, now = 1; //Prim
+```cpp
+int ans, cnt, now = 1; //Prim
 void prim()
 {
     for (int i = 2; i &lt;= n; ++i)
@@ -1837,9 +1938,11 @@ void prim()
         }
     }
 }
-</code></pre>
+```
+
 <h3 id="拓扑排序">拓扑排序</h3>
-<pre><code class="language-cpp">ll ans[100] ，cnt; //拓扑序列及其元素个数
+```cpp
+ll ans[100] ，cnt; //拓扑序列及其元素个数
 ll deg[100];       //所有点的入度
 
 void topsort()
@@ -1886,9 +1989,11 @@ int main()
 
     return 0;
 }
-</code></pre>
+```
+
 <h3 id="tarjan">Tarjan</h3>
-<pre><code class="language-cpp">std::vector&lt;int&gt; t[maxn]; //vector 存图
+```cpp
+std::vector&lt;int&gt; t[maxn]; //vector 存图
 std::vector&lt;int&gt; SCC[maxn];
 std::stack&lt;int&gt; stk;
 
@@ -1939,11 +2044,13 @@ signed main()
     ......
     
 }
-</code></pre>
+```
+
 <h2 id="字符串">字符串</h2>
 <h3 id="快速读入-1">快速读入</h3>
 <p>可以根据题目描述自行修改。</p>
-<pre><code class="language-cpp">void Init()
+```cpp
+void Init()
 {
     char ch;
     ch = getchar();
@@ -1963,12 +2070,14 @@ signed main()
         ch = getchar();
     }
 }
-</code></pre>
+```
+
 <h3 id="kmp">KMP</h3>
 <p><a href="https://www.luogu.com.cn/problem/P3375" target="_blank">模板题</a></p>
 <p><span class="math inline">\(A\)</span> 为大串，<span class="math inline">\(B\)</span> 为小串。</p>
 <p>求 <span class="math inline">\(next\)</span> 数组</p>
-<pre><code class="language-cpp">void make_nxt()
+```cpp
+void make_nxt()
 {
     k = 1;
     for (int i = 2; i &lt;= lenb; ++i)
@@ -1979,9 +2088,11 @@ signed main()
             nxt[i] = k++;
     }
 }
-</code></pre>
+```
+
 <p>匹配</p>
-<pre><code class="language-cpp">void check()
+```cpp
+void check()
 {
     k = 1;
     for (int i = 1; i + lenb &lt;= lena + 1;)
@@ -2001,10 +2112,12 @@ signed main()
         k = nxt[k] + 1;
     }
 }
-</code></pre>
+```
+
 <h2 id="常用-stl-初步">常用 STL 初步</h2>
 <h3 id="string">string</h3>
-<pre><code class="language-cpp">#include&lt;cstring&gt;
+```cpp
+#include&lt;cstring&gt;
 string s1,s2;
 
 s1 + s2;   //将两个字符串拼接
@@ -2018,10 +2131,12 @@ s1.substr(start, len);  //从 start 截取一个长度为 len 的字符串
 s1.find(char，start=0); //查找并返回从 start 开始的字符 ch 的位置
 s1.rfind(ch);   //从末尾开始，查找并返回第一个找到的字符 ch 的位置
 //找不到则返回 -1
-</code></pre>
+```
+
 <h3 id="queue">queue</h3>
 <p>先进先出</p>
-<pre><code class="language-cpp">#include&lt;queue&gt;
+```cpp
+#include&lt;queue&gt;
 queue&lt;int&gt; q; //priority_queue&lt;int&gt; q（从大到小排序）;
 q.empty();  //判断队列是否为空
 q.size();   //返回队列长度
@@ -2035,10 +2150,12 @@ q.back();   //返回队尾元素的值，但不删除该元素
      
 //priority_queue only:
 q.top();    //返回具有最高优先级的元素值，但不删除该元素
-</code></pre>
+```
+
 <h3 id="stack">stack</h3>
 <p>先进后出</p>
-<pre><code class="language-cpp">#include&lt;set&gt;
+```cpp
+#include&lt;set&gt;
 stack&lt;int&gt; s;
 stack&lt; int, vector&lt;int&gt; &gt; stk;  //覆盖基础容器类型，使用vector实现stk
 s.empty();  //判断stack是否为空，为空返回true，否则返回false
@@ -2046,10 +2163,12 @@ s.size();   //返回stack中元素的个数
 s.pop();    //删除栈顶元素，但不返回其值
 s.top();    //返回栈顶元素的值，但不删除此元素
 s.push(item);   //在栈顶压入新元素item
-</code></pre>
+```
+
 <h3 id="set">set</h3>
 <p>自动从小到大排序，自动去重。</p>
-<pre><code class="language-cpp">set&lt;int&gt; s;//multiset&lt;int&gt; s （不去重）
+```cpp
+set&lt;int&gt; s;//multiset&lt;int&gt; s （不去重）
 set&lt;int&gt;::const_iterator iter; //迭代器 
 
 s.insert();   //插入
@@ -2074,9 +2193,11 @@ for(iter = s.begin() ; iter != s.end() ; ++iter)
 {
     cout&lt;&lt;*iter&lt;&lt;" ";//使用迭代器遍历 
 }
-</code></pre>
+```
+
 <h3 id="map">map</h3>
-<pre><code class="language-cpp">#include&lt;map&gt;
+```cpp
+#include&lt;map&gt;
 map&lt;string,int&gt; m;//string 是 key，int 是 value。
 m.size();   //输出元素个数
 m.empty();  //如果 map 为空则返回 true
@@ -2086,13 +2207,13 @@ m.clear();  //删除所有元素
 m["AKIOI"] = 10;
 cout &lt;&lt; m["AKIOI"];
 输出结果：10
-</code></pre>
+```
+
 <h4 id="unordered">unordered</h4>
-<pre><code class="language-cpp">#include&lt;unordered_map&gt;
+```cpp
+#include&lt;unordered_map&gt;
 用法：与 map 差别不大。
 优点：因为内部实现了哈希表，因此其查找速度非常的快
 缺点：哈希表的建立比较耗费时间
 适用处：对于查找问题，unordered_map会更加高效一些，因此遇到查找问题，常会考虑一下用 unordered_map
-</code></pre>
-<p align="right"> EdisonBa </p>
-<p align="right">2020.11.6 初次编辑</p>
+```
