@@ -9,6 +9,16 @@ top_img: https://api.dujin.org/bing/1920.php
 cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkibab1zj31hc0u0dy7.jpg
 ---
 
+
+$$
+\begin{matrix}
+\color{gold}\colorbox{black}{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\kern{0.4pt}} \\
+\large \colorbox{black}{\color{gold}\underline{\texttt{Caution!!! \qquad Caution!!! \qquad Caution!!! \qquad Caution!!! }}}\\
+\Large \colorbox{black}{\color{gold}\underline\text{\Huge ☢\:\Large本文使用了少量\LaTeX，可能会导致加载极快!\Huge \:☢\Large\ \ \!\! \color{black}\kern{8.4pt}}} \\
+\large \colorbox{black}{\color{gold}\underline{\texttt{Caution!!! \qquad Caution!!! \qquad Caution!!! \qquad Caution!!! }}}\\
+\end{matrix}
+$$
+
 <p><strong>Update:</strong></p>
 ```
 2021.6.29    
@@ -17,7 +27,7 @@ cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkibab1zj31hc0u0dy7.jpg
 
 <details>
 <summary>历史更新记录</summary>
-<pre><code>
+```
 2021.6.28
 新增 std::string
 新增 Tarjan
@@ -44,8 +54,8 @@ cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxkibab1zj31hc0u0dy7.jpg
 重构了线段树的代码。
 更新了部分标题名称。
 ```
-
 </details>
+
 <h2 id="考试必备">考试必备</h2>
 <h3 id="快速读入">快速读入</h3>
 ```cpp
