@@ -7,7 +7,7 @@ tags:
 categories: 培训总结
 description: 正睿OI Day6总结。
 top_img: https://api.dujin.org/bing/1920.php
-cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxlhcoxbbj31kw0w0tz3.jpg
+cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1fodqnxw8wgj30zk0qo1h0.jpg
 ---
 
 ## T1
@@ -18,9 +18,9 @@ cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxlhcoxbbj31kw0w0tz3.jpg
 
 求出所有s的前缀在s中出现次数之和
 
-$字符串长度 <= 200000$
+$字符串长度 \leq 200000$
 
-例如 abab 答案 6
+例如 `abab` 答案 $6$
 ```
 a 两次匹配
 ab 两次匹配
