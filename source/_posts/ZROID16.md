@@ -311,7 +311,7 @@ To perform this partitioning, Yulia first calculates a numeric distance $d(i, j)
 
 $$ D(S) = \max _{i, j \in S} d(i, j). $$
 
-Yulia then partitions the shipments into two subsets $A$ and $B$ in such a way that the sum of their disparities $D(A) + D(B)$ is minimized. Your task is to help her find this partitioning.</div>
+Yulia then partitions the shipments into two subsets $A$ and $B$ in such a way that the sum of their disparities $D(A) + D(B)$ is minimized. Your task is to help her find this partitioning.
 
 ### 思路
 
