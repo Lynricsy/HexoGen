@@ -1,3 +1,15 @@
+---
+title: 正睿OI Day20 总结
+date: 2021-08-05
+tags:
+ - 培训总结
+ - 区间DP
+categories: 培训总结
+description: 正睿OI Day20总结。
+top_img: https://api.dujin.org/bing/1920.php
+cover: https://tvax4.sinaimg.cn/large/0072Vf1pgy1foxlhe0a6tj31hc0u0qhh.jpg
+---
+
 ## T1
 
 ### 题目
