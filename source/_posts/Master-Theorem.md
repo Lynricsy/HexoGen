@@ -20,11 +20,7 @@ cover: https://article.biliimg.com/bfs/article/c133f6366b1c376d289197967788f521f
 
 假设复杂度递推式子是
 
-$$
-
-T(n)=aT(\frac{n}{b})+O(n^d)
-
-$$
+$T(n)=aT(\frac{n}{b})+O(n^d)$
 
 那么
 
@@ -32,30 +28,18 @@ $$
 
 复杂度为
 
-$$
-
-O(n^d)
-
-$$
+$O(n^d)$
 
 如果$\dfrac{a}{b^d}>1$：
 
 复杂度为
 
-$$
-
-O(n^{\log_ba})
-
-$$
+$O(n^{\log_ba})$
 
 如果$\dfrac{a}{b^d}=1$：
 
 复杂度为
 
-$$
-
-O(n^{d}\log_bn)
-
-$$
+$O(n^{d}\log_bn)$
 
 嗯，到这里就结束了！![qq_emoji: xy](https://xn--9zr.tk/xyx)
