@@ -107,10 +107,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/Thomitics/PicBed@master/pics/win11.jpg
+index_img: https://i0.hdslb.com/bfs/album/d66747302a68fa984ed9551c3664761508bc3657.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/thomitics/picbed/pics/bg565.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/thomitics/picbed/pics/b2bg.jpg
 
 # The banner image of archive page
 archive_img: https://api.r10086.com/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F2.php
