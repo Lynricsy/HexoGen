@@ -673,7 +673,7 @@ aside:
       link: https://github.com/thomitics
   card_announcement:
     enable: true
-    content: This is my Blog.一个处境卑微的退役OIer，现在在读高三
+    content: 这个问题你大概已经问过我37次了,我是枫凪泠音哦。 |<br>それでも、わたしは。|<br>愿智慧伴你同行。|<br>一个处境卑微的退役OIer，现在在读高三
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
