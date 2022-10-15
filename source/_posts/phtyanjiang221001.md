@@ -12,4 +12,4 @@ cover: https://tvax2.sinaimg.cn/large/0075LAc9ly1h6q3vbtqizj30j0087mzc.jpg
 
 ![a](https://tvax2.sinaimg.cn/large/0075LAc9ly1h6q3vbtqizj30j0087mzc.jpg)
 
-![b](https://s1.328888.xyz/2022/10/15/Uc13P.jpg)
+![b](https://pic1.imgdb.cn/item/634b3b2316f2c2beb162b9ed.jpg)
