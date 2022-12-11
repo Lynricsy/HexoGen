@@ -1,5 +1,5 @@
 ---
-title: 纳西妲：明月与繁星
+title: 纳西妲：明月与繁星书
 date: 2022-10-06
 tags:
  - 随笔
@@ -10,3 +10,7 @@ cover: https://s1.328888.xyz/2022/10/15/Uc5P6.jpg
 ---
 
 敬请期待
+
+别看了，开个坑而已
+
+![来个图吧](https://tvax2.sinaimg.cn/large/0075LAc9ly1h907q5ns3rj31z4140npd.jpg)
