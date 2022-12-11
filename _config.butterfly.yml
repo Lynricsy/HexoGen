@@ -371,10 +371,10 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: twikoo-9gkusr5330416ede
+  envId: https://blog-twikoo-eta.vercel.app
   region:
   option:
-  visitor: false
+  visitor: true
 
 # Chat Services
 # --------------------------------------
