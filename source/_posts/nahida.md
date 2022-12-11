@@ -6,7 +6,7 @@ tags:
 categories: 原神
 description: 《纳西妲为什么是神》
 top_img: https://api.dujin.org/bing/1920.php
-cover: https://s1.328888.xyz/2022/10/15/Uc5P6.jpg
+cover: https://tvax2.sinaimg.cn/large/0075LAc9ly1h907q5ns3rj31z4140npd.jpg
 ---
 
 敬请期待
