@@ -876,8 +876,8 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <meta name="referrer" content="never">
-    - <link rel="stylesheet" href="https://raw.githubusercontents.com/Thomitics/likiblaze.github.io/master/css/new.css">
-#     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/new.css">
+#     - <link rel="stylesheet" href="https://raw.githubusercontents.com/Thomitics/likiblaze.github.io/master/css/new.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/new.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/iconfont.min.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/plugins.min.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.css">
