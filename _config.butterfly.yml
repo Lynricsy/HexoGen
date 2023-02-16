@@ -875,7 +875,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <meta name="referrer" content="never">
+    - <meta name="referrer" content="no-referrer">
 #     - <link rel="stylesheet" href="https://raw.githubusercontents.com/Thomitics/likiblaze.github.io/master/css/new.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/new.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/iconfont.min.css">
