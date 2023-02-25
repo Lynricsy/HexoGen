@@ -874,8 +874,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
-    - <meta name="referrer" content="no-referrer">
+#     - <link rel="stylesheet" href="/xxx.css">
+#     - <meta name="referrer" content="no-referrer">
 #     - <link rel="stylesheet" href="https://raw.githubusercontents.com/Thomitics/likiblaze.github.io/master/css/new.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/new.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomitics/likiblaze.github.io@master/css/iconfont.min.css">
